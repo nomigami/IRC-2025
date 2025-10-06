@@ -102,40 +102,40 @@ export default function Categories() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
   {/* Video 2023 */}
-  <motion.div
-    whileHover={{ scale: 1.03 }}
-    className="overflow-hidden rounded-2xl shadow-lg w-full"
-  >
-    <video
-      src="/IRC-2023.mp4"
-      autoPlay
-      loop
-      muted
-      playsInline
-      className="w-full h-[300px] object-cover"
-    />
-    <p className="bg-green-700 text-white text-center py-2 font-semibold">
-      Recap IRC 2023
-    </p>
-  </motion.div>
+ 
+<motion.div
+  whileHover={{ scale: 1.03 }}
+  className="overflow-hidden rounded-2xl shadow-lg w-full backdrop-blur-sm hover:backdrop-blur-0 transition-all duration-500"
+>
+  <div className="relative w-full h-[300px]">
+    <iframe
+      src="https://drive.google.com/file/d/1D1ZXvhvUMffyz3AbjogrZXcoU1M8hKcM/preview"
+      allow="autoplay"
+      className="w-full h-full rounded-2xl"
+    ></iframe>
+  </div>
+  <p className="bg-green-700 text-white text-center py-2 font-semibold">
+    Recap IRC 2023
+  </p>
+</motion.div>
 
-  {/* Video 2024 */}
-  <motion.div
-    whileHover={{ scale: 1.03 }}
-    className="overflow-hidden rounded-2xl shadow-lg w-full"
-  >
-    <video
-      src="/RECAP-IRC-2024.mp4"
-      autoPlay
-      loop
-      muted
-      playsInline
-      className="w-full h-[300px] object-cover"
-    />
-    <p className="bg-green-700 text-white text-center py-2 font-semibold">
-      Recap IRC 2024
-    </p>
-  </motion.div>
+{/* Video 2024 */}
+<motion.div
+  whileHover={{ scale: 1.03 }}
+  className="overflow-hidden rounded-2xl shadow-lg w-full backdrop-blur-sm hover:backdrop-blur-0 transition-all duration-500"
+>
+  <div className="relative w-full h-[300px]">
+    <iframe
+      src="https://drive.google.com/file/d/132VDgkUQmfTb2n06kTBWwRilOxMbKN0t/preview"
+      allow="autoplay"
+      className="w-full h-full rounded-2xl"
+    ></iframe>
+  </div>
+  <p className="bg-green-700 text-white text-center py-2 font-semibold">
+    Recap IRC 2024
+  </p>
+</motion.div>
+
 </div>
 
         </motion.section>
