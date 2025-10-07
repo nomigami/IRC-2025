@@ -74,7 +74,9 @@ export default function Categories() {
             >
               <div className="flex items-center gap-3 mb-4">
                 {cat.icon}
-                <h2 className="text-green-700 text-2xl font-bold">{cat.title}</h2>
+                <h2 className="text-green-700 text-2xl font-bold">
+                  {cat.title}
+                </h2>
               </div>
               <ul className="text-gray-700 space-y-3 list-disc list-inside font-medium">
                 {cat.items.map((item, i) => (
@@ -101,43 +103,41 @@ export default function Categories() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-  {/* Video 2023 */}
- 
-<motion.div
-  whileHover={{ scale: 1.03 }}
-  className="overflow-hidden rounded-2xl shadow-lg w-full backdrop-blur-sm hover:backdrop-blur-0 transition-all duration-500"
->
-  <div className="relative w-full h-[300px]">
-    <iframe
-      src="https://drive.google.com/file/d/1D1ZXvhvUMffyz3AbjogrZXcoU1M8hKcM/preview"
-      allow="autoplay"  
-      className="w-full h-full rounded-2xl"
-    ></iframe>
-  </div>
-  <p className="bg-green-700 text-white text-center py-2 font-semibold">
-    Recap IRC 2023
-  </p>
-</motion.div>
+            {/* Video 2023 */}
 
-{/* Video 2024 */}
-<motion.div
-  whileHover={{ scale: 1.03 }}
-  className="overflow-hidden rounded-2xl shadow-lg w-full backdrop-blur-sm hover:backdrop-blur-0 transition-all duration-500"
->
-  <div className="relative w-full h-[300px]">
-    <iframe
-      src="https://drive.google.com/file/d/132VDgkUQmfTb2n06kTBWwRilOxMbKN0t/preview"
-      allow="autoplay"
-      className="w-full h-full rounded-2xl"
-    ></iframe>
-  </div>
-  <p className="bg-green-700 text-white text-center py-2 font-semibold">
-    Recap IRC 2024
-  </p>
-</motion.div>
+            <motion.div
+              whileHover={{ scale: 1.03 }}
+              className="overflow-hidden rounded-2xl shadow-lg w-full backdrop-blur-sm hover:backdrop-blur-0 transition-all duration-500"
+            >
+              <div className="relative w-full h-[300px]">
+                <iframe
+                  src="https://drive.google.com/file/d/1D1ZXvhvUMffyz3AbjogrZXcoU1M8hKcM/preview"
+                  allow="autoplay"
+                  className="w-full h-full rounded-2xl"
+                ></iframe>
+              </div>
+              <p className="bg-green-700 text-white text-center py-2 font-semibold">
+                Recap IRC 2023
+              </p>
+            </motion.div>
 
-</div>
-
+            {/* Video 2024 */}
+            <motion.div
+              whileHover={{ scale: 1.03 }}
+              className="overflow-hidden rounded-2xl shadow-lg w-full backdrop-blur-sm hover:backdrop-blur-0 transition-all duration-500"
+            >
+              <div className="relative w-full h-[300px]">
+                <iframe
+                  src="https://drive.google.com/file/d/132VDgkUQmfTb2n06kTBWwRilOxMbKN0t/preview"
+                  allow="autoplay"
+                  className="w-full h-full rounded-2xl"
+                ></iframe>
+              </div>
+              <p className="bg-green-700 text-white text-center py-2 font-semibold">
+                Recap IRC 2024
+              </p>
+            </motion.div>
+          </div>
         </motion.section>
 
         {/* Galeri Foto IRC */}
@@ -160,7 +160,6 @@ export default function Categories() {
               hidden: {},
               visible: { transition: { staggerChildren: 0.6 } },
             }}
-            
           >
             {images.map((src, i) => (
               <motion.div
