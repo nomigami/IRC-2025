@@ -41,7 +41,7 @@ export default function Categories() {
 
   // Foto galeri IRC (total 8 foto)
   const images = [
-    "/IRC..jpg",
+    "/ircc.jpg",
     "/sc.jpg",
     "/rt.jpg",
     "/ap.jpg",
