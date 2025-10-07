@@ -110,7 +110,7 @@ export default function Categories() {
   <div className="relative w-full h-[300px]">
     <iframe
       src="https://drive.google.com/file/d/1D1ZXvhvUMffyz3AbjogrZXcoU1M8hKcM/preview"
-      allow="autoplay"
+      allow="autoplay"  
       className="w-full h-full rounded-2xl"
     ></iframe>
   </div>
