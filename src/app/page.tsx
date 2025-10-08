@@ -99,7 +99,7 @@ export default function Home() {
           className="flex justify-center space-x-2 mb-2"
         >
           <div className="flex items-center justify-center gap-3">
-              <div className="flex items-center gap-1 text-shadow-white">
+              <div className="flex items-center gap-1 text-white">
                 <Image 
                   src="/kemenag.png" 
                   alt="Kementrian Agama" 
@@ -107,7 +107,7 @@ export default function Home() {
                   height={40} 
                   className="object-contain" 
                 />
-                <span className="text-sm">Kemenag Prov,Jateng</span>
+                <span className="text-sm">Kemenag Prov.Jateng</span>
               </div>
               <div className="flex items-center gap-0 text-white">
                 <Image 
