@@ -86,7 +86,7 @@ export default function Home() {
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.8 }}
   viewport={{ once: false, amount: 0.5 }}
-  className="text-4xl md:text-7xl font-bold mb-2 font-moderniz text-green"
+  className="text-4xl md:text-7xl font-bold mb-2 font-moderniz text-green-500"
 >
   INNOVATION ROBOTIC COMPETITION
 </motion.h1>
