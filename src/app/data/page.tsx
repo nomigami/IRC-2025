@@ -145,20 +145,30 @@ export default function DataPeserta() {
     <div className="flex flex-col min-h-screen">
       <Navbar />
 
-      <main className="flex-grow max-w-5xl mx-auto px-6 py-16 pt-28">
+      <main className="flex-grow w-full px-4 sm:px-6 md:px-10 lg:px-20 py-16 pt-28">
         <motion.h1
           initial={{ opacity: 0, y: -40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className="text-4xl font-bold mb-8 text-center text-white"
+          className="text-3xl sm:text-4xl font-bold mb-8 text-center text-white"
         >
           Data Peserta
         </motion.h1>
 
         {pesan && (
-          <p className="text-center mb-4 font-semibold text-yellow-300">
-            {pesan}
-          </p>
+          <div className="text-center mb-6">
+            <p className="font-semibold text-yellow-300">{pesan}</p>
+            {pesan.includes("berhasil") && (
+              <a
+                href="https://chat.whatsapp.com/DGb9RZJCnhl3NuWuU776Lh" // 🔗 ganti link grup WA di sini
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-4 bg-green-600 hover:bg-green-500 text-white px-6 py-2 rounded-lg font-medium transition-transform transform hover:scale-105"
+              >
+                🔗 Bergabung ke Grup WhatsApp
+              </a>
+            )}
+          </div>
         )}
 
         {/* Step 1: Pilih Jenjang */}
@@ -168,26 +178,29 @@ export default function DataPeserta() {
             initial="hidden"
             animate="visible"
             transition={{ duration: 0.6 }}
-            className="bg-gray-900 text-white rounded-2xl shadow-lg p-8"
+            className="bg-gray-900 text-white rounded-2xl shadow-lg p-8 max-w-6xl mx-auto w-full"
           >
             <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2">
               <GraduationCap className="w-6 h-6 text-yellow-400" />
               Pilih Jenjang
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
               {jenjangList.map((jenjang) => (
                 <button
                   key={jenjang}
                   onClick={() => setJenjangDipilih(jenjang)}
-                  className="bg-green-600 hover:bg-green-500 text-white font-semibold text-lg px-8 py-6 rounded-2xl shadow-lg transition-transform transform hover:scale-105"
+                  className="bg-green-600 hover:bg-green-500 text-white font-semibold text-lg px-6 py-5 rounded-2xl shadow-lg transition-transform transform hover:scale-105"
                 >
                   {jenjang}
                 </button>
               ))}
             </div>
+            
           </motion.div>
         )}
-
+          <p className="text-center mt-6 text-yellow-300 text-sm sm:text-base">
+              Diharapkan peserta mengisi form sesuai dengan jenjang sekolah dan kategori lomba yang diikuti.
+            </p>
         {/* Step 2: Pilih Kategori */}
         {jenjangDipilih && !kategoriDipilih && (
           <motion.div
@@ -195,10 +208,10 @@ export default function DataPeserta() {
             initial="hidden"
             animate="visible"
             transition={{ duration: 0.6 }}
-            className="bg-gray-900 text-white rounded-2xl shadow-lg p-8"
+            className="bg-gray-900 text-white rounded-2xl shadow-lg p-8 max-w-6xl mx-auto w-full"
           >
-            <div className="flex justify-between items-center mb-6">
-              <h2 className="text-2xl font-semibold flex items-center gap-2">
+            <div className="flex flex-col sm:flex-row justify-between items-center mb-6 gap-4">
+              <h2 className="text-2xl font-semibold flex items-center gap-2 text-center sm:text-left">
                 <Layers className="w-6 h-6 text-blue-400" />
                 Pilih Kategori ({jenjangDipilih})
               </h2>
@@ -210,13 +223,12 @@ export default function DataPeserta() {
               </button>
             </div>
 
-            {/* ✅ Bagian card diperbesar */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {kategoriMap[jenjangDipilih].map((kat) => (
                 <button
                   key={kat}
                   onClick={() => setKategoriDipilih(kat)}
-                  className="bg-blue-600 hover:bg-blue-500 text-white text-lg font-semibold px-8 py-6 rounded-2xl shadow-lg transition-transform transform hover:scale-105"
+                  className="bg-blue-600 hover:bg-blue-500 text-white text-lg font-semibold px-6 py-5 rounded-2xl shadow-lg transition-transform transform hover:scale-105"
                 >
                   {kat}
                 </button>
@@ -232,10 +244,10 @@ export default function DataPeserta() {
             initial="hidden"
             animate="visible"
             transition={{ duration: 0.6 }}
-            className="bg-gray-900 text-white rounded-2xl shadow-lg p-8"
+            className="bg-gray-900 text-white rounded-2xl shadow-lg p-8 max-w-6xl mx-auto w-full"
           >
-            <div className="flex justify-between items-center mb-6">
-              <h2 className="text-2xl font-semibold flex items-center gap-2">
+            <div className="flex flex-col sm:flex-row justify-between items-center mb-6 gap-4">
+              <h2 className="text-2xl font-semibold flex items-center gap-2 text-center sm:text-left">
                 {kategoriTim.includes(kategoriDipilih) ? (
                   <Users className="w-6 h-6 text-green-400" />
                 ) : (
@@ -243,7 +255,7 @@ export default function DataPeserta() {
                 )}
                 Form Peserta: {kategoriDipilih} ({jenjangDipilih})
               </h2>
-              <div className="space-x-2">
+              <div className="flex flex-wrap justify-center gap-2">
                 <button
                   onClick={() => setKategoriDipilih(null)}
                   className="bg-yellow-400 px-4 py-2 rounded-lg text-black hover:bg-yellow-300"
@@ -269,7 +281,7 @@ export default function DataPeserta() {
                     name="namaTim"
                     value={formTim.namaTim}
                     onChange={handleChangeTim}
-                    className="w-full border px-4 py-2 rounded text-white"
+                    className="w-full border px-4 py-2 rounded bg-gray-800 text-white"
                     required
                   />
                 </div>
@@ -281,7 +293,7 @@ export default function DataPeserta() {
                       name="peserta1"
                       value={formTim.peserta1}
                       onChange={handleChangeTim}
-                      className="w-full border px-4 py-2 rounded text-white"
+                      className="w-full border px-4 py-2 rounded bg-gray-800 text-white"
                       required
                     />
                   </div>
@@ -292,7 +304,7 @@ export default function DataPeserta() {
                       name="peserta2"
                       value={formTim.peserta2}
                       onChange={handleChangeTim}
-                      className="w-full border px-4 py-2 rounded text-white"
+                      className="w-full border px-4 py-2 rounded bg-gray-800 text-white"
                       required
                     />
                   </div>
@@ -304,7 +316,7 @@ export default function DataPeserta() {
                     name="sekolah"
                     value={formTim.sekolah}
                     onChange={handleChangeTim}
-                    className="w-full border px-4 py-2 rounded text-white"
+                    className="w-full border px-4 py-2 rounded bg-gray-800 text-white"
                     required
                   />
                 </div>
@@ -316,7 +328,7 @@ export default function DataPeserta() {
                       name="pembimbing1"
                       value={formTim.pembimbing1}
                       onChange={handleChangeTim}
-                      className="w-full border px-4 py-2 rounded text-white"
+                      className="w-full border px-4 py-2 rounded bg-gray-800 text-white"
                       required
                     />
                   </div>
@@ -329,7 +341,7 @@ export default function DataPeserta() {
                       name="pembimbing2"
                       value={formTim.pembimbing2}
                       onChange={handleChangeTim}
-                      className="w-full border px-4 py-2 rounded text-white"
+                      className="w-full border px-4 py-2 rounded bg-gray-800 text-white"
                     />
                   </div>
                 </div>
@@ -340,7 +352,7 @@ export default function DataPeserta() {
                     name="telepon"
                     value={formTim.telepon}
                     onChange={handleChangeTim}
-                    className="w-full border px-4 py-2 rounded text-white"
+                    className="w-full border px-4 py-2 rounded bg-gray-800 text-white"
                     required
                   />
                 </div>
@@ -362,7 +374,7 @@ export default function DataPeserta() {
                     name="nama"
                     value={formIndividu.nama}
                     onChange={handleChangeIndividu}
-                    className="w-full border px-4 py-2 rounded text-white"
+                    className="w-full border px-4 py-2 rounded bg-gray-800 text-white"
                     required
                   />
                 </div>
@@ -373,7 +385,7 @@ export default function DataPeserta() {
                     name="sekolah"
                     value={formIndividu.sekolah}
                     onChange={handleChangeIndividu}
-                    className="w-full border px-4 py-2 rounded text-white"
+                    className="w-full border px-4 py-2 rounded bg-gray-800 text-white"
                     required
                   />
                 </div>
@@ -385,7 +397,7 @@ export default function DataPeserta() {
                       name="pembimbing1"
                       value={formIndividu.pembimbing1}
                       onChange={handleChangeIndividu}
-                      className="w-full border px-4 py-2 rounded text-white"
+                      className="w-full border px-4 py-2 rounded bg-gray-800 text-white"
                       required
                     />
                   </div>
@@ -398,7 +410,7 @@ export default function DataPeserta() {
                       name="pembimbing2"
                       value={formIndividu.pembimbing2}
                       onChange={handleChangeIndividu}
-                      className="w-full border px-4 py-2 rounded text-white"
+                      className="w-full border px-4 py-2 rounded bg-gray-800 text-white"
                     />
                   </div>
                 </div>
@@ -409,7 +421,7 @@ export default function DataPeserta() {
                     name="telepon"
                     value={formIndividu.telepon}
                     onChange={handleChangeIndividu}
-                    className="w-full border px-4 py-2 rounded text-white"
+                    className="w-full border px-4 py-2 rounded bg-gray-800 text-white"
                     required
                   />
                 </div>
