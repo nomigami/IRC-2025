@@ -24,7 +24,7 @@ export default function Navbar() {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="text-xl font-bold text-white bg-black/70 px-4 py-1 rounded-lg shadow-md backdrop-blur-md"
+          className="text-xl font-bold text-white bg-black/70 px-4 py-1 rounded-lg shadow-md backdrop-transparant"
         >
           IRC Robotik 2025
         </motion.span>

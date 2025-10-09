@@ -6,6 +6,8 @@ import Image from 'next/image'
 import Link from "next/link";
 import { Inter } from "next/font/google";
 import { Poppins } from "next/font/google";
+import Navbar from '../Navbar';
+
 
 export default function Home() {
   const [loading, setLoading] = useState(true)
@@ -51,21 +53,7 @@ export default function Home() {
         animate={{ opacity: loading ? 0 : 1, y: loading ? 30 : 0 }}
         transition={{ duration: 1 }}
       >
-        {/* Navbar */}
-        <header className="w-full bg-transparent absolute top-0 left-0 z-10">
-          <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-            <span className="font-bold text-lg text-white">IRC Robotik 2025</span>
-            
-           <nav className="flex items-center space-x-6 text-white">
-              <Link href="/">Beranda</Link>
-              <Link href="/kategori">Kategori</Link>
-               <Link href="/data">Data</Link>
-              <Link href="/kontak">Kontak</Link>
-            </nav>
-          </div>
-        </header>
-
-        
+        <Navbar />
 
       <section className="relative w-full h-[70vh] flex items-center justify-center text-center overflow-hidden">
       {/* Background Image */}
