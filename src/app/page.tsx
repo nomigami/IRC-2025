@@ -65,6 +65,8 @@ export default function Home() {
           </div>
         </header>
 
+        
+
       <section className="relative w-full h-[70vh] flex items-center justify-center text-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 ">
