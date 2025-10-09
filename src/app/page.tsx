@@ -157,8 +157,8 @@ export default function Home() {
             viewport={{ once: false }}
             className="bg-gray-800 text-white rounded-xl shadow-lg p-6"
           >
-            <h2 className="text-2xl font-bold mb-4">Sambutan</h2>
-            <p className="text-justify font-Poppins">
+            <h2 className="text-2xl font-bold mb-4 text-white">Sambutan</h2>
+            <p className="text-justify font-Poppins text-white">
               Puji syukur kita panjatkan kepada Allah SWT atas limpahan rahmat
               dan hidayah-Nya. Kami ucapkan terima kasih kepada seluruh dan peserta yang telah 
               berkenan meramaikan dan berpatisispasi dalam acara sebesar ini tidak lupa 
@@ -181,8 +181,8 @@ export default function Home() {
             className="bg-gray-800 text-white rounded-xl shadow-lg p-6"
           >
            
-            <h2 className="text-2xl font-bold mb-4">Tentang Event</h2>
-            <p className="text-justify font-poppins">
+            <h2 className="text-2xl font-bold mb-4 text-white">Tentang Event</h2>
+            <p className="text-justify font-poppins text-white">
               Lomba IRC adalah sebuah lomba yang diadakan setiap setahun sekali
               yang dimana lomba ini diselenggarakan guna memberikan ajang yang
               bergengsi untuk para pelajar di Indonesia. Pada lomba IRC ini ada
@@ -204,7 +204,7 @@ export default function Home() {
             <h2 className="text-2xl font-bold mb-4" id="timeline">
               Timeline Lomba
             </h2>
-            <ul className="list-disc list-inside space-y-1 font-Poppins">
+            <ul className="list-disc list-inside space-y-1 font-Poppins text-white">
               <li>Pendaftaran: 5 Oktober - 2 November 2025</li>
               <li>Technical Meeting : 5 November 2025</li>
               <li>Pelaksanaan Lomba: 8-9 November 2025</li>
@@ -219,8 +219,8 @@ export default function Home() {
             viewport={{ once: false }}
             className="bg-gray-800 text-white rounded-xl shadow-lg p-6"
           >
-            <h2 className="text-2xl font-bold mb-4">Catatan</h2>
-            <p className="text-justify font-Poppins">
+            <h2 className="text-2xl font-bold mb-4 text-white">Catatan</h2>
+            <p className="text-justify font-Poppins text-white">
               Setelah melakukan pendaftaran diharapkan mengisi nama team dan asal
               sekolah di halaman data. Serta melakukan pembayaran silahkan
               konfirmasi pembayaran di nomor yang sudah tertera. Untuk kritik dan
