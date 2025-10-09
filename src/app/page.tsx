@@ -151,7 +151,7 @@ export default function Home() {
                 <h2 className="text-2xl font-bold mb-4">Sambutan</h2>
                 <p className="text-justify font-Poppins text-white">
                   Puji syukur kita panjatkan kepada Allah SWT atas limpahan rahmat
-                  dan hidayah-Nya. Kami ucapkan terima kasih kepada seluruh dan peserta yang telah 
+                  dan hidayah-Nya. Kami ucapkan terima kasih kepada seluruh peserta yang telah 
                   berkenan meramaikan dan berpatisispasi dalam acara sebesar ini tidak lupa 
                   juga kami ucapkan terima kasih kepada seluruh panitia yang telah 
                   bekerja keras untuk menyelenggarakan acara ini. Kami berharap
@@ -171,8 +171,8 @@ export default function Home() {
                 <h2 className="text-2xl font-bold mb-4">Tentang Event</h2>
                 <p className="text-justify font-poppins text-white">
                   Lomba IRC adalah sebuah lomba yang diadakan setiap setahun sekali
-                  guna memberikan ajang bergengsi untuk para pelajar Indonesia.
-                  Tahun ini terdapat beberapa kategori tambahan agar semakin banyak
+                  guna memberikan ajang bergengsi untuk para pelajar Indonesia. Di
+                  tahun ini terdapat beberapa kategori tambahan agar semakin banyak
                   siswa dapat berpartisipasi dan menunjukkan kemampuannya.
                 </p>
               </motion.div>
