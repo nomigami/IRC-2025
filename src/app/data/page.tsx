@@ -142,11 +142,10 @@ export default function DataPeserta() {
   };
 
   return (
-    <main className="flex flex-col min-h-screen">
-      {/* Konten utama halaman */}
-      <div className="flex-grow max-w-5xl mx-auto px-6 py-16 pt-28">
-        <Navbar />
+    <div className="flex flex-col min-h-screen">
+      <Navbar />
 
+      <main className="flex-grow max-w-5xl mx-auto px-6 py-16 pt-28">
         <motion.h1
           initial={{ opacity: 0, y: -40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -175,12 +174,12 @@ export default function DataPeserta() {
               <GraduationCap className="w-6 h-6 text-yellow-400" />
               Pilih Jenjang
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
               {jenjangList.map((jenjang) => (
                 <button
                   key={jenjang}
                   onClick={() => setJenjangDipilih(jenjang)}
-                  className="bg-green-600 hover:bg-green-500 text-white font-medium px-5 py-4 rounded-xl shadow-md transition"
+                  className="bg-green-600 hover:bg-green-500 text-white font-semibold text-lg px-8 py-6 rounded-2xl shadow-lg transition-transform transform hover:scale-105"
                 >
                   {jenjang}
                 </button>
@@ -210,12 +209,14 @@ export default function DataPeserta() {
                 ← Kembali
               </button>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+            {/* ✅ Bagian card diperbesar */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
               {kategoriMap[jenjangDipilih].map((kat) => (
                 <button
                   key={kat}
                   onClick={() => setKategoriDipilih(kat)}
-                  className="bg-blue-600 hover:bg-blue-500 text-white px-5 py-4 rounded-xl shadow-md transition flex-grow"
+                  className="bg-blue-600 hover:bg-blue-500 text-white text-lg font-semibold px-8 py-6 rounded-2xl shadow-lg transition-transform transform hover:scale-105"
                 >
                   {kat}
                 </button>
@@ -423,10 +424,9 @@ export default function DataPeserta() {
             )}
           </motion.div>
         )}
-      </div>
+      </main>
 
-      {/* Footer di bagian paling bawah */}
       <Footer />
-    </main>
+    </div>
   );
 }
