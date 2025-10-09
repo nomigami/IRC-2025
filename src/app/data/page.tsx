@@ -180,6 +180,7 @@ export default function DataPeserta() {
             transition={{ duration: 0.6 }}
             className="bg-gray-900 text-white rounded-2xl shadow-lg p-8 max-w-6xl mx-auto w-full"
           >
+            
             <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2">
               <GraduationCap className="w-6 h-6 text-yellow-400" />
               Pilih Jenjang
@@ -190,17 +191,19 @@ export default function DataPeserta() {
                   key={jenjang}
                   onClick={() => setJenjangDipilih(jenjang)}
                   className="bg-green-600 hover:bg-green-500 text-white font-semibold text-lg px-6 py-5 rounded-2xl shadow-lg transition-transform transform hover:scale-105"
+                  
                 >
                   {jenjang}
                 </button>
               ))}
             </div>
-            
+            <h1 className="text-center mt-15 text-white text-sm sm:text-base gap-20 ">
+              Diharapkan peserta mengisi form sesuai dengan jenjang sekolah dan kategori lomba yang diikuti.
+              <h1>Setelah mengisi data silahkan bergabung grup peserta di link yang akan muncul setelah data sudah berhasil dikirim.</h1>
+            </h1>
           </motion.div>
         )}
-          <p className="text-center mt-6 text-yellow-300 text-sm sm:text-base">
-              Diharapkan peserta mengisi form sesuai dengan jenjang sekolah dan kategori lomba yang diikuti.
-            </p>
+          
         {/* Step 2: Pilih Kategori */}
         {jenjangDipilih && !kategoriDipilih && (
           <motion.div
