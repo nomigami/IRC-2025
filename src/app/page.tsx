@@ -301,7 +301,7 @@ export default function Home() {
 
               
               <Image
-                src="/LR.JPG"
+                src="/lr.jpg"
                 alt="Sentral Robotik.id"
                 width={25}
                 height={25}
