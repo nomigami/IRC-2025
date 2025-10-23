@@ -32,3 +32,69 @@ body {
   font-family: 'Orbitron', sans-serif;
   font-family: 'Poppins', sans-serif;
 }
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 16px;
+  text-align: center;
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Grid responsif untuk logo */
+.footer-logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  gap: 12px;
+  align-items: center;
+  justify-items: center;
+  margin: 20px 0;
+}
+
+.footer-logos img {
+  width: 64px;
+  height: auto;
+  max-width: 100%;
+}
+
+/* Social link */
+.footer-social {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.footer-social a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+/* Copy text */
+.copy {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.6);
+}
+
+/* Responsif di layar kecil */
+@media (max-width: 480px) {
+  .footer {
+    padding: 24px 8px;
+  }
+
+  .footer-logos img {
+    width: 48px;
+  }
+
+  .footer-social a {
+    font-size: 0.75rem;
+  }
+}
+
