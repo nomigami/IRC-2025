@@ -258,7 +258,7 @@ export default function Home() {
                  <div className="grid grid-cols-1 gap-5">
                    <motion.div
                      initial={{ opacity: 0, y: 20 }}
-                     whileInView={{ opacity: 3, y: 0 }}
+                     whileInView={{ opacity: 1, y: 0 }}
                      transition={{ duration: 0.8, delay: 0.2 }}
                      className="flex items-center justify-center gap-2"
                    >
