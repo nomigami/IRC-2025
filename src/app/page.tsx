@@ -188,8 +188,8 @@ export default function Home() {
               >
                 <h2 className="text-2xl font-bold mb-4" id="timeline">Timeline Lomba</h2>
                 <ul className="list-disc list-inside space-y-1 font-Poppins text-white text-sm sm:text-base">
-                  <li>Pendaftaran: 5 Oktober - 2 November 2025</li>
-                  <li>Technical Meeting: 5 November 2025</li>
+                  <li>Pendaftaran: 5 Oktober - 5 November 2025</li>
+                  <li>Technical Meeting: 6 November 2025</li>
                   <li>Pelaksanaan Lomba: 8-9 November 2025</li>
                 </ul>
               </motion.div>
