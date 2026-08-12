@@ -31,7 +31,7 @@ export default function CertificatePage() {
           className="mt-6 max-w-3xl mx-auto text-gray-300 leading-8"
         >
           Selamat datang di layanan kurasi Innovation Robotic Competition
-          2025. Silakan pilih layanan yang ingin Anda gunakan.
+          2026. Silakan pilih layanan yang ingin Anda gunakan.
         </motion.p>
       </section>
 
