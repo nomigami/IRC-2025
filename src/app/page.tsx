@@ -215,8 +215,8 @@ export default function Home() {
             <aside className="col-span-2 flex justify-center items-center">
               <div className="w-full h-auto rounded-xl overflow-hidden shadow-xl">
                 <Image
-                  src="/poster.jpeg"
-                  alt="Banner IRC Robotik 2025"
+                  src="/poster2.jpeg"
+                  alt="Banner IRC Robotik 2026"
                   width={400}
                   height={600}
                   className="w-full h-auto max-h-[950px] object-cover md:rounded-xl rounded-lg"

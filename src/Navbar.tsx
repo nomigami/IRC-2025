@@ -12,9 +12,10 @@ export default function Navbar() {
   const menuItems = [
     { name: "Beranda", path: "/" },
     { name: "Kategori", path: "/kategori" },
-    { name: "Data", path: "/data" },
-    { name: "Kontak", path: "/kontak" },
+    { name: "Pendaftaran", path: "/pendaftaran" },
     { name: "Kurasi", path: "/kurasi" },
+    { name: "Kontak", path: "/kontak" },
+    
   ];
 
   return (
