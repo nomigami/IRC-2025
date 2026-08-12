@@ -19,7 +19,7 @@ export default function Pendaftaran() {
           className="text-3xl md:text-5xl font-extrabold text-center mb-10 text-green-700 drop-shadow-md"
         >
           Pendaftaran Lomba <br />
-          <span className="text-blue-700">INNOVATION ROBOTIC COMPETITION 2025</span>
+          <span className="text-blue-700">INNOVATION ROBOTIC COMPETITION 2026</span>
         </motion.h1>
 
         {/* Card Content */}
