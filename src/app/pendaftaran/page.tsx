@@ -41,7 +41,7 @@ export default function Pendaftaran() {
             {/* Link Formulir */}
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Link
-                href="https://docs.google.com/forms/d/e/1FAIpQLSd_2Pqvgq7qe4JgUjvFVOmeGP9oyx7jhIR2sL_rsDbGYPC7wQ/viewform"
+                href="bit.ly/PENDAFTARANIRC2026"
                 target="_blank"
                 className="flex items-center justify-center gap-3 bg-green-600 text-white px-8 py-4 rounded-xl shadow-md hover:bg-green-500 transition font-semibold"
               >

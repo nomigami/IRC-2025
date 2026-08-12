@@ -27,7 +27,7 @@ export default function Navbar() {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="text-xl font-bold text-white bg-black/70 px-4 py-1 rounded-lg shadow-md backdrop-transparant"
         >
-          IRC Robotik 2025
+          IRC Robotik 2026
         </motion.span>
 
         {/* Menu Desktop */}
