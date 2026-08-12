@@ -188,9 +188,9 @@ export default function Home() {
               >
                 <h2 className="text-2xl font-bold mb-4" id="timeline">Timeline Lomba</h2>
                 <ul className="list-disc list-inside space-y-1 font-Poppins text-white text-sm sm:text-base">
-                  <li>Pendaftaran: 5 Oktober - 5 November 2025</li>
-                  <li>Technical Meeting: 6 November 2025</li>
-                  <li>Pelaksanaan Lomba: 8-9 November 2025</li>
+                  <li>Pendaftaran: 5 Oktober - 5 November 2026</li>
+                  <li>Technical Meeting: 6 November 2026</li>
+                  <li>Pelaksanaan Lomba: 8-9 November 2026</li>
                 </ul>
               </motion.div>
 
@@ -215,7 +215,7 @@ export default function Home() {
             <aside className="col-span-2 flex justify-center items-center">
               <div className="w-full h-auto rounded-xl overflow-hidden shadow-xl">
                 <Image
-                  src="/psnew.jpg"
+                  src="/poster.jpeg"
                   alt="Banner IRC Robotik 2025"
                   width={400}
                   height={600}
