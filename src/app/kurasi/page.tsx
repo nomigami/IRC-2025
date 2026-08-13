@@ -70,7 +70,7 @@ export default function CertificatePage() {
               href="MASUKKAN_LINK_GOOGLE_DRIVE_CEK_SERTIFIKAT"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-8 w-full py-3 rounded-xl bg-blue-600 hover:bg-blue-700 transition font-semibold flex items-center justify-center"
+              className="mt-15 w-full py-5 rounded-xl bg-blue-600 hover:bg-blue-700 transition font-semibold flex items-center justify-center"
             >
               Cek Sertifikat
             </a>
@@ -107,7 +107,7 @@ export default function CertificatePage() {
               href="MASUKKAN_LINK_GOOGLE_DRIVE_CEK_BERKAS"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-8 w-full py-3 rounded-xl bg-green-600 hover:bg-green-700 transition font-semibold flex items-center justify-center"
+              className="mt-8 w-full py-5 rounded-xl bg-green-600 hover:bg-green-700 transition font-semibold flex items-center justify-center"
             >
               Cek Berkas Lomba
             </a>
