@@ -190,7 +190,7 @@ export default function Home() {
                 <ul className="list-disc list-inside space-y-1 font-Poppins text-white text-sm sm:text-base">
                   <li>Pendaftaran: 5 Oktober - 5 November 2026</li>
                   <li>Technical Meeting: 6 November 2026</li>
-                  <li>Pelaksanaan Lomba: 8-9 November 2026</li>
+                  <li>Pelaksanaan Lomba: 7-8 November 2026</li>
                 </ul>
               </motion.div>
 
@@ -204,8 +204,8 @@ export default function Home() {
               >
                 <h2 className="text-2xl font-bold mb-4">Catatan</h2>
                 <p className="text-justify font-Poppins text-white">
-                  Setelah melakukan pendaftaran diharapkan mengisi nama tim dan asal sekolah di halaman data. 
-                  Silakan konfirmasi pembayaran di nomor yang tertera. 
+                  Setelah melakukan pendaftaran .
+                  Silakan konfirmasi pembayaran di nomor yang sudah tertera. 
                   Untuk kritik dan saran bisa dikirim melalui halaman kontak.
                 </p>
               </motion.div>
