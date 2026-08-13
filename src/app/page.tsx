@@ -60,7 +60,7 @@ export default function Home() {
           {/* Background Image */}
           <div className="absolute inset-0">
             <Image 
-              src="/ircc.jpg"
+              src="/trr.jpg"
               alt="IRC Robotik 2025"
               fill
               className="rounded-2xl"
