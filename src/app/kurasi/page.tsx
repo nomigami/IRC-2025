@@ -67,7 +67,7 @@ export default function CertificatePage() {
 
             {/* Google Drive */}
             <a
-              href="MASUKKAN_LINK_GOOGLE_DRIVE_CEK_SERTIFIKAT"
+              href="https://drive.google.com/drive/folders/1_2K7Ylk8kPRyFsGXsO_NfuPx36VJiEof"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-15 w-full py-5 rounded-xl bg-blue-600 hover:bg-blue-700 transition font-semibold flex items-center justify-center"
