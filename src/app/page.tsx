@@ -186,11 +186,16 @@ export default function Home() {
                 viewport={{ once: false }}
                 className="bg-gray-800 text-white rounded-xl shadow-lg p-6"
               >
-                <h2 className="text-2xl font-bold mb-4" id="timeline">Timeline Lomba</h2>
+                <h2 className="text-2xl font-bold mb-4" id="timeline">
+                    Timeline Lomba
+                </h2>
+
                 <ul className="list-disc list-inside space-y-1 font-Poppins text-white text-sm sm:text-base">
-                  <li>Pendaftaran: 5 Oktober - 5 November 2026</li>
-                  <li>Technical Meeting: 6 November 2026</li>
-                  <li>Pelaksanaan Lomba: 7-8 November 2026</li>
+                   <li>Pendaftaran Gelombang 1 / Batch 1: 1 September - 30 September 2026 (Diskon 25%)</li>
+                   <li>Pendaftaran Gelombang 2 / Batch 2: 1 Oktober - 30 Oktober 2026 (Berlaku tarif pendaftaran reguler)</li>
+                   <li>Technical Meeting: Akhir Oktober 2026</li>
+                   <li>Presentasi Online Project Inovasi: 31 Oktober 2026</li>
+                   <li>Pelaksanaan Lomba: 7-8 November 2026</li>
                 </ul>
               </motion.div>
 
