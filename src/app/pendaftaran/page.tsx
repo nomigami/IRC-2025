@@ -53,7 +53,7 @@ export default function Pendaftaran() {
             {/* Link Juknis */}
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Link
-                href="https://bit.ly/JUKNISIRC2025"
+                href="http://bit.ly/JUKNISIRC26"
                 target="_blank"
                 className="flex items-center justify-center gap-3 bg-blue-600 text-white px-8 py-4 rounded-xl shadow-md hover:bg-blue-500 transition font-semibold"
               >

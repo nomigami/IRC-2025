@@ -42,17 +42,17 @@ export default function Categories() {
 const videos = [
   {
     year: "2023",
-    youtube: "https://www.youtube.com/watch?v=MASUKKAN_LINK_YOUTUBE_2023",
+    youtube: "https://www.youtube.com/watch?v=jyTmQqF5m2A&pp=ygUQbXRzbiAyIHN1a29oYXJqbw%3D%3D",
     thumbnail: "jrr.jpg",
   },
   {
     year: "2024",
-    youtube: "https://www.youtube.com/watch?v=MASUKKAN_LINK_YOUTUBE_2024",
+    youtube: "https://www.youtube.com/shorts/dbGTH2b0Dxk",
     thumbnail: "ircc.jpg",
   },
   {
     year: "2025",
-    youtube: "https://www.youtube.com/watch?v=MASUKKAN_LINK_YOUTUBE_2025",
+    youtube: "https://www.youtube.com/watch?v=BL4FVG4t2jM&pp=ygUQbXRzbiAyIHN1a29oYXJqb9IHCQkTDAGHKiGM7w%3D%3D",
     thumbnail: "pl.jpg",
   },
 ];
